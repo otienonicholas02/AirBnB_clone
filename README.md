@@ -56,7 +56,7 @@ Store and persist objects to files (JSON files)
 $ ./console.py
 (hbnb) help
 
-Documented commands (type help 
+Documented commands
 
 EOF  help  quit
 (hbnb) 
@@ -68,7 +68,7 @@ But also in non-interactive mode: (like the Shell project in C)
 $ echo "help" | ./console.py
 (hbnb)
 
-Documented commands (type help 
+Documented commands  
 
 EOF  help  quit
 (hbnb) 
