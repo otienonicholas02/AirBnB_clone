@@ -65,10 +65,7 @@ class TestHBNBCommand_help(unittest.TestCase):
             self.assertEqual(var, output.getvalue().strip())
 
     def test_helpforall(self):
-        var = ("Usage: all or all <class> or <class>.all()\n        "
-               "Show string representations of all instances of a given class"
-               ".\n     If no class is specified, show all instantiated "
-               "objects.")
+        var = ("Shows a string representations of all instances of a given class.")
         with patch("sys.stdout", new=StringIO()) as output:
             self.assertFalse(HBNBCommand().onecmd("help all"))
             self.assertEqual(var, output.getvalue().strip())
