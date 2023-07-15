@@ -82,7 +82,7 @@ class TestUser_derive(unittest.TestCase):
 
     def test_ifargs_notused(self):
         use = User(None)
-        self.assertNotIn(None, use.__dict__.values())
+        self.assertNotIn(None, use.__dict__.values()) 
 
 
 class TestUser_save(unittest.TestCase):
@@ -109,7 +109,7 @@ class TestUser_save(unittest.TestCase):
         use = User()
         with self.assertRaises(TypeError):
             use.save(None)
-
+    
     def test_1save(self):
         use = User()
         sleep(0.05)

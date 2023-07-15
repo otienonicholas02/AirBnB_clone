@@ -13,6 +13,8 @@ from models import storage
 from shlex import split
 
 
+
+
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter."""
 
@@ -188,7 +190,6 @@ def parse(arg):
         retl = [i.strip(",") for i in lexer]
         retl.append(curly_brackets.group())
         return retl
-
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
